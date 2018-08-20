@@ -16,15 +16,37 @@
 		<div class="row">
 			<div class="col-md-6 col-lg-7 ml-auto mr-auto mt-5">
 				
-				<p class="display-4 lead">HELLO USER</p>
+				<p class="display-4 lead">Add to existing node</p>
 				
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/create-user">Register </a></button>
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/create-node">Create New Node </a></button>
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/add-node">Add to existing Node </a></button>
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/delete-node">Delete an existing Node </a></button>
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/transfer-node">Transfer Ownership </a></button>
-				<button class="btn btn-lg btn-block btn-link btn-outline-primary"> <a href = "/merge-node">Merge Two Nodes </a></button>
-				
+				<form method="post" action="/myaction">
+					<div class="form-group">
+						<label for="" class="lead" >First NodeId </label>
+						<input type="text" name="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="" class="lead">First Username: </label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="" class="lead">First Username Password: </label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="" class="lead" >Second NodeId </label>
+						<input type="text" name="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="" class="lead">Second Username: </label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="" class="lead">Second Username Password: </label>
+						<input type="password" class="form-control">
+					</div>
+
+					<button type="submit" class="btn btn-primary btn-block" >Merge </button>
+				</form>
+			
 			</div>
 		</div>
 	</div>

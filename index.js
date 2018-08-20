@@ -22,6 +22,12 @@ app.get('/add-node', function (req, res) {
 app.get('/delete-node', function (req, res) {
   res.sendfile('./public/delete-node.html');
 })
+app.get('/transfer-node', function (req, res) {
+  res.sendfile('./public/transfer-node.html');
+})
+app.get('/merge-node', function (req, res) {
+  res.sendfile('./public/merge-node.html');
+})
  
 app.post('/myaction', function(req, res) {
 	console.log("I was here");
