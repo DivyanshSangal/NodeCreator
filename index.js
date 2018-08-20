@@ -28,6 +28,9 @@ app.get('/transfer-node', function (req, res) {
 app.get('/merge-node', function (req, res) {
   res.sendfile('./public/merge-node.html');
 })
+app.get('/longest-chain', function (req, res) {
+  res.sendfile('./public/longest-chain.html');
+})
  
 app.post('/myaction', function(req, res) {
 	console.log("I was here");
